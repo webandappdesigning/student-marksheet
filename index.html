@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <div class="container">
+            <header>
+                <h1>Iqra University</h1>
+                <h2>Student Marksheet</h2>
+            </header>
+    
+            <div class="student-info">
+                <p><strong>Student Name:</strong></p>
+                <input type="text">
+                <p><strong>Student ID:</strong></p>
+                <input type="text">
+                <p><strong>Program:</strong></p>
+                <input type="text">
+                <p><strong>Semester:</strong></p>
+                <input type="text">
+            </div>
+    
+            <table class="marksheet">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                        <th>Marks Obtained</th>
+                        <th>Total Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="marksBody">
+                    <tr>
+                        <td>CS101</td>
+                        <td>Introduction to Computer Science</td>
+                        <td>3</td>
+                        <td><input type="number" class="marks" data-course="CS101" /></td>
+                        <td>100</td>
+                        <td><span class="grade">-</span></td>
+                    </tr>
+                    <tr>
+                        <td>CS102</td>
+                        <td>Data Structures</td>
+                        <td>3</td>
+                        <td><input type="number" class="marks" data-course="CS102" /></td>
+                        <td>100</td>
+                        <td><span class="grade">-</span></td>
+                    </tr>
+                    <tr>
+                        <td>CS103</td>
+                        <td>Discrete Mathematics</td>
+                        <td>3</td>
+                        <td><input type="number" class="marks" data-course="CS103" /></td>
+                        <td>100</td>
+                        <td><span class="grade">-</span></td>
+                    </tr>
+                    <tr>
+                        <td>CS104</td>
+                        <td>Database Systems</td>
+                        <td>3</td>
+                        <td><input type="number" class="marks" data-course="CS104" /></td>
+                        <td>100</td>
+                        <td><span class="grade">-</span></td>
+                    </tr>
+                    <tr>
+                        <td>CS105</td>
+                        <td>Operating Systems</td>
+                        <td>3</td>
+                        <td><input type="number" class="marks" data-course="CS105" /></td>
+                        <td>100</td>
+                        <td><span class="grade">-</span></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <div class="footer">
+                <p><strong>Total Marks Obtained:</strong> <span id="totalMarks">0</span>/500</p>
+                <p><strong>CGPA:</strong> <span id="cgpa">0.00</span></p>
+            </div>
+        </div>
+    
+        <script src="./js/apps.js"></script>
+    
+     
+</body>
+</html>
